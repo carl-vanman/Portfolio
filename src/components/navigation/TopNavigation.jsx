@@ -9,7 +9,7 @@ const TopNavigation = () => {
     const [showProjects, setShowProjects] = useState(true);
 
     return (
-        <nav style={{ display: "flex", alignItems: "baseline", gap: "48px" }}>
+        <nav>
             <div>
                 <ul className={styles.primaryNavWrapper}>
                     <li>
