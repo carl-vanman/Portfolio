@@ -1,0 +1,68 @@
+.smiley-wrapper {
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;
+    filter: blur(2px);
+
+    animation: rotate 4s infinite linear;
+    transition: filter 3s ease-in-out;
+}
+
+.smiley {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: smiley-rotate 4s infinite linear;
+}
+
+.smiley--gold {
+    background-image: url("./image/smiley-gold.png");
+    top: 1px;
+    right: 1px;
+    border-radius: 100vw;
+
+    transition: right 3s ease-in-out;
+}
+
+.smiley--blue {
+    background-image: url("./image/smiley-blue.png");
+    left: 1px;
+    bottom: 1px;
+    border-radius: 100vw;
+
+    transition: left 3s ease-in-out;
+}
+
+.smiley-wrapper:hover > .smiley--gold {
+    right: 75px;
+}
+
+.smiley-wrapper:hover > .smiley--blue {
+    left: 75px;
+}
+
+.smiley-wrapper:hover {
+    filter: blur(12px);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes smiley-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}

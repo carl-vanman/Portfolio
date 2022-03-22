@@ -1,0 +1,11 @@
+.primaryNavWrapper {
+    display: flex;
+    align-items: baseline;
+    gap: var(--item-spacing);
+}
+
+.dropDownBtn {
+    background-color: transparent;
+    border: none;
+    color: var(--clr-primary-disable);
+}
