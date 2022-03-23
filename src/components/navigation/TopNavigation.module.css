@@ -1,11 +1,20 @@
-.primaryNavWrapper {
+.primary_nav_wrapper {
     display: flex;
-    align-items: baseline;
-    gap: var(--item-spacing);
+    flex-wrap: wrap-reverse;
+    align-items: flex-end;
+    column-gap: var(--item-spacing);
 }
 
-.dropDownBtn {
-    background-color: transparent;
-    border: none;
-    color: var(--clr-primary-disable);
+.custom_link {
+    margin-left: -4px;
+}
+
+.custom_link_label {
+    text-transform: uppercase;
+    line-height: 120%;
+}
+
+.regular_link_wrapper {
+    display: flex;
+    column-gap: var(--item-spacing);
 }

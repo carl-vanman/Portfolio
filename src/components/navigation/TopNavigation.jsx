@@ -1,25 +1,22 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
+
+import CustomLink from "./CustomLink";
 
 import styles from "./TopNavigation.module.css";
 
-//CSS MODULES ELLER INTE?
-
 const TopNavigation = () => {
-    const [showProjects, setShowProjects] = useState(true);
-
     return (
         <nav>
-            <div>
-                <ul className={styles.primaryNavWrapper}>
-                    <li>
-                        <button className={styles.dropDownBtn}>
-                            <h3>Projects</h3>
-                        </button>
-                    </li>
+            <ul className={styles.primary_nav_wrapper}>
+                <li className={styles.custom_link}>
+                    <CustomLink to="/projects">
+                        <h3 className={styles.custom_link_label}>Projects</h3>
+                    </CustomLink>
+                </li>
+                <div className={styles.regular_link_wrapper}>
                     <li>
                         <NavLink
-                            to="/About"
+                            to="/about"
                             className={({ isActive }) =>
                                 isActive ? "link--active" : ""
                             }
@@ -29,7 +26,7 @@ const TopNavigation = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/Contact"
+                            to="/contact"
                             className={({ isActive }) =>
                                 isActive ? "link--active" : ""
                             }
@@ -37,8 +34,8 @@ const TopNavigation = () => {
                             Experience
                         </NavLink>
                     </li>
-                </ul>
-            </div>
+                </div>
+            </ul>
         </nav>
     );
 };
