@@ -1,0 +1,23 @@
+.bottom_nav_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    column-gap: var(--item-spacing);
+    margin-top: calc(var(--item-spacing) / 4);
+}
+
+.social_link_btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.social_link_btn:hover > .social_link_label {
+    color: var(--clr-secondary);
+}
+
+.social_link_label {
+    font-weight: var(--font-weight-regular);
+    color: var(--clr-primary-disable);
+    transition: color ease-out 350ms;
+}

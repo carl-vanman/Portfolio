@@ -87,12 +87,12 @@ a:hover {
 .link--active {
     color: var(--clr-primary);
 }
-/*
+
 a.link--active::after {
     content: "";
-    height: 4px;
-    width: 80%;
-    background-color: var(--clr-secondary);
+    height: 2px;
+    width: 100%;
+    background-color: var(--clr-primary);
     position: absolute;
     left: 0px;
     display: none;
@@ -102,9 +102,9 @@ a.link--active::after {
 a.link--active::after {
     display: block;
     content: "";
-    height: 4px;
-    width: 80%;
-    background-color: var(--clr-secondary);
+    height: 2px;
+    width: 100%;
+    background-color: var(--clr-primary);
     position: absolute;
     left: 0px;
 }
@@ -114,9 +114,9 @@ a.link--active::after {
         width: 0%;
     }
     100% {
-        width: 80%;
+        width: 100%;
     }
-} */
+}
 
 /* 	--font-size-title-primary: 64px;
 	--font-size-title-secondary: 48px;

@@ -16,7 +16,7 @@ const TopNavigation = () => {
                 <div className={styles.regular_link_wrapper}>
                     <li>
                         <NavLink
-                            to="/about"
+                            to="/"
                             className={({ isActive }) =>
                                 isActive ? "link--active" : ""
                             }
@@ -26,7 +26,7 @@ const TopNavigation = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/contact"
+                            to="/experence"
                             className={({ isActive }) =>
                                 isActive ? "link--active" : ""
                             }

@@ -3,6 +3,7 @@
     flex-wrap: wrap-reverse;
     align-items: flex-end;
     column-gap: var(--item-spacing);
+    row-gap: calc(var(--item-spacing) / 4);
 }
 
 .custom_link {
