@@ -14,10 +14,17 @@
     --clr-secondary: #14813d;
     --clr-secondary-disable: #95c6a7;
 
+    /* Dark mode */
+    --dark-mode-primary: #ffffff;
+    --dark-mode-primary-disable: #8f9095;
+    --dark-mode-secondary: #2873c5;
+    --dark-mode-secondary-disable: #9ec0e5;
+    --dark-mode-background: #060914;
+
     /* Typography */
     /* https://type-scale.com/ */
 
-    --base-size: 14px;
+    --base-size: clamp(11px, 2vw, 14px);
     --scale-type: 1.618;
 
     --text-base: var(--base-size);
@@ -27,6 +34,8 @@
     --h2: calc(var(--h3) * var(--scale-type));
     --h1: calc(var(--h2) * var(--scale-type));
     --letter-spacing: 0.02em;
+
+    --heading-line-height: 1.3em;
 
     --font-weight-black: 900;
     --font-weight-regular: 400;
@@ -42,7 +51,7 @@ h3,
 h4,
 h5 {
     font-weight: var(--font-weight-black);
-    line-height: var(--body-line-height);
+    line-height: var(--heading-line-height);
     letter-spacing: var(--letter-spacing);
 }
 

@@ -5,7 +5,8 @@
     display: grid;
     grid-template-columns: 8fr 1fr 1fr 3fr 20fr;
     grid-template-rows: 13fr 2fr 1fr 5fr;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .about_container {
@@ -18,6 +19,7 @@
     width: fit-content;
     text-transform: uppercase;
     color: var(--clr-secondary);
+    margin-left: -2px;
 }
 
 .heading_japanese {
@@ -28,7 +30,7 @@
     display: block;
     color: var(--clr-secondary-disable);
     bottom: 24px;
-    right: -26px;
+    right: -21px;
 }
 
 .sub_heading {
