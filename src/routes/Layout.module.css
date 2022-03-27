@@ -18,5 +18,22 @@ main {
     width: 600px;
     height: auto;
     top: var(--item-spacing);
-    filter: blur(10px);
+    filter: blur(8px);
+    animation: disform 12s infinite linear;
+}
+
+@keyframes disform {
+    0%,
+    100% {
+        transform: skew(0.01turn, 4deg);
+    }
+    25% {
+        transform: scale(98%);
+    }
+    50% {
+        transform: skew(-0.01turn, -4deg);
+    }
+    75% {
+        transform: scale(102%);
+    }
 }
