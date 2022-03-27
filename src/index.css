@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700;800;900&display=swap");
 
 * {
     box-sizing: border-box;
@@ -37,10 +37,10 @@
 
     --heading-line-height: 1.3em;
 
-    --font-weight-black: 900;
+    --font-weight-black: 700;
     --font-weight-regular: 400;
 
-    --body-max-width: 55ch;
+    --body-max-width: 45ch;
     --body-line-height: 1.5em;
     --body-bottom-margin: 1.75em;
 

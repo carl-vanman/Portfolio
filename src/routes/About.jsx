@@ -7,17 +7,22 @@ const About = () => {
                 <header>
                     <h3 className={styles.heading}>
                         Hello _
-                        <h3 className={styles.heading_japanese}>こんにちは</h3>
+                        <span className={styles.heading_in_japanese}>
+                            こんにちは
+                        </span>
                     </h3>
-                    <h5 className={styles.sub_heading}>My name is Carl</h5>
+                    <h5 className={styles.sub_heading}>Nice to meet you.</h5>
                 </header>
-                <div>
+                <div className={styles.body}>
                     <p>
-                        Mauris vel ante vehicula volutpat. Nullam blandit
-                        hendrerit dui ut euismod. Mauris finibus pretium
-                        faucibus. Pellentesque tortor dui, cursus at nibh vitae,
-                        luctus malesuada tortor. Fusce vel dapibus mauris, non
-                        tincidunt lectus.
+                        My name is Carl, I'm a kind and humble person with a
+                        creative and technical mind.
+                        <br />
+                        Constantly evolving Front-end developer, former tattoo
+                        artist and Certified Harley Davidson technician.
+                    </p>
+                    <p className={styles.body_date}>
+                        {`| ${new Date().toDateString()}`}
                     </p>
                 </div>
             </article>

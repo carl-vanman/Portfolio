@@ -1,5 +1,4 @@
 .wrapper {
-    /* background-color: rgb(214, 179, 127); */
     height: 100%;
     width: 100%;
     display: grid;
@@ -22,7 +21,7 @@
     margin-left: -2px;
 }
 
-.heading_japanese {
+.heading_in_japanese {
     position: absolute;
     writing-mode: vertical-lr;
     text-orientation: upright;
@@ -31,9 +30,55 @@
     color: var(--clr-secondary-disable);
     bottom: 24px;
     right: -21px;
+    /*  animation: heading-in-japanese 1.2s ease; */
 }
 
 .sub_heading {
     text-transform: uppercase;
     color: var(--clr-secondary-disable);
+    animation: sub-heading 1s ease;
+}
+
+.body {
+    width: fit-content;
+    animation: content 2s ease-in;
+}
+
+.body_date {
+    font-size: 11px;
+}
+
+/* 
+@keyframes heading-in-japanese {
+    0% {
+        margin-bottom: 48px;
+        opacity: 0;
+    }
+    100% {
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+}
+ */
+@keyframes sub-heading {
+    0% {
+        margin-left: -24px;
+        opacity: 0;
+    }
+    100% {
+        margin-left: -2px;
+        opacity: 1;
+    }
+}
+
+@keyframes content {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
