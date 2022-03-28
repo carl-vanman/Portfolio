@@ -21,9 +21,10 @@ const About = () => {
                         Constantly evolving Front-end developer, former tattoo
                         artist and Certified Harley Davidson technician.
                     </p>
-                    <p className={styles.body_date}>
-                        {`| ${new Date().toDateString()}`}
-                    </p>
+                    {/* <p className={styles.body_date}>
+                        <span>| </span>
+                        {`${new Date().toDateString()}`}
+                    </p> */}
                 </div>
             </article>
         </section>

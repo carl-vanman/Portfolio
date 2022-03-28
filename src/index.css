@@ -7,19 +7,22 @@
     font-family: "Gothic A1", sans-serif;
 }
 
-:root {
-    /* Colours */
-    --clr-primary: #060914;
+/* 
+	version 1. Green white
+	--clr-primary: #060914;
     --clr-primary-disable: #8f9095;
     --clr-secondary: #14813d;
-    --clr-secondary-disable: #95c6a7;
+    --clr-secondary-disable: #95c6a7; 
+	
+*/
 
-    /* Dark mode */
-    --dark-mode-primary: #ffffff;
-    --dark-mode-primary-disable: #8f9095;
-    --dark-mode-secondary: #2873c5;
-    --dark-mode-secondary-disable: #9ec0e5;
-    --dark-mode-background: #060914;
+:root {
+    /* Colours version 2*/
+    --clr-primary: #e9e8e5;
+    --clr-primary-disable: #8f9095;
+    --clr-secondary: #c51a22;
+    --clr-secondary-disable: #a78734;
+    --clr-primary_background: #060914;
 
     /* Typography */
     /* https://type-scale.com/ */
@@ -45,6 +48,12 @@
     --body-bottom-margin: 1.75em;
 
     --item-spacing: 48px;
+}
+
+/* setting for version 2 */
+body {
+    background-color: var(--clr-primary_background);
+    color: var(--clr-primary);
 }
 
 h3,
@@ -101,7 +110,7 @@ a.link--active::after {
     content: "";
     height: 2px;
     width: 100%;
-    background-color: var(--clr-primary);
+    background-color: var(--clr-secondary-disable);
     position: absolute;
     left: 0px;
     display: none;
@@ -113,7 +122,7 @@ a.link--active::after {
     content: "";
     height: 2px;
     width: 100%;
-    background-color: var(--clr-primary);
+    background-color: var(--clr-secondary-disable);
     position: absolute;
     left: 0px;
 }

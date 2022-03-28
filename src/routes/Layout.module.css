@@ -14,26 +14,39 @@ main {
 
 .smiley_background_image {
     position: absolute;
-    right: -100px;
+    right: -40px;
     width: 600px;
     height: auto;
     top: var(--item-spacing);
-    filter: blur(8px);
-    animation: disform 12s infinite linear;
+    filter: blur(16px);
+    /* animation: disform 20s infinite linear; */
+    z-index: -99999;
 }
 
 @keyframes disform {
     0%,
     100% {
-        transform: skew(0.01turn, 4deg);
+        transform: skew(0.01turn, 2deg);
+        /* filter: blur(8px);
+        right: -100px;
+        top: 48px; */
     }
     25% {
         transform: scale(98%);
+        /* filter: blur(6px);
+        right: -90px;
+        top: 60px; */
     }
     50% {
-        transform: skew(-0.01turn, -4deg);
+        transform: skew(-0.01turn, -2deg);
+        /* filter: blur(4px);
+        right: -100px;
+        top: 48px; */
     }
     75% {
         transform: scale(102%);
+        /* filter: blur(6px);
+        right: -90px;
+        top: 60px; */
     }
 }

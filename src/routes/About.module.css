@@ -46,6 +46,14 @@
 
 .body_date {
     font-size: 11px;
+    /*  background-color: var(--clr-primary);
+    width: fit-content;
+    padding-right: var(--item-spacing); */
+}
+
+.body_date span {
+    color: var(--clr-primary);
+    font-size: var(--text-base);
 }
 
 /* 
