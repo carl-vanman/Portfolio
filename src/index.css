@@ -50,6 +50,17 @@
     --item-spacing: 48px;
 }
 
+/* 
+Genereral layout
+| space |     content    | space |
+*/
+.primary-wrapper {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.2em;
+}
+
 /* setting for version 2 */
 body {
     background-color: var(--clr-primary-background);

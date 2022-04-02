@@ -43,17 +43,19 @@
     animation: content 2s ease-in;
 }
 
-/* .circle {
-    grid-column: 5 / -1;
+.circle {
+    grid-column: 1 / -1;
     grid-row: 1 / -1;
-    justify-self: center;
-    align-self: center;
-    width: 400px;
-    height: 400px;
-    border: 48px solid var(--clr-secondary-disable);
+    justify-self: right;
+    margin-right: clamp(180px, 20vw, 250px);
+    margin-top: 100px;
+    width: clamp(120px, 20vw, 220px);
+    height: clamp(120px, 20vw, 220px);
+    background-color: var(--clr-secondary-disable);
     border-radius: 100vw;
     z-index: -99999;
-} */
+    /* filter: blur(150px); */
+}
 
 @keyframes sub-heading {
     0% {

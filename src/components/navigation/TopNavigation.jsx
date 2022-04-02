@@ -14,7 +14,7 @@ const TopNavigation = () => {
 
     return (
         <nav>
-            <ul className={styles.primary_nav_wrapper}>
+            <ul className={`primary-wrapper ${styles.primary_nav_wrapper}`}>
                 <li>
                     <button
                         className={`${styles.sub_navigation_btn} ${

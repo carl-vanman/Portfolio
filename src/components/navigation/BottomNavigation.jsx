@@ -5,7 +5,7 @@ import styles from "./BottomNavigation.module.css";
 const BottomNavigation = () => {
     return (
         <aside className={styles.bottom_nav}>
-            <ul className={styles.bottom_nav_wrapper}>
+            <ul className={`primary-wrapper ${styles.bottom_nav_wrapper}`}>
                 <li>
                     <NavLink
                         to="/contact"

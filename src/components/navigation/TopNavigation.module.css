@@ -1,8 +1,5 @@
-nav {
-    position: relative;
-}
-
 .primary_nav_wrapper {
+    padding-bottom: 0em;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: flex-end;
@@ -16,7 +13,6 @@ nav {
     color: var(--clr-primary-disable);
     font-size: var(--h3);
     font-weight: var(--font-weight-black);
-    line-height: var(120%);
     letter-spacing: var(--letter-spacing);
     text-transform: uppercase;
     cursor: pointer;

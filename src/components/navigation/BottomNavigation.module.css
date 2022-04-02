@@ -1,9 +1,13 @@
+.bottom_nav {
+    /* border-top: 0.5px solid var(--clr-primary); */
+    /* background-color: var(--clr-primary); */
+}
+
 .bottom_nav_wrapper {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
     column-gap: var(--item-spacing);
-    margin-top: calc(var(--item-spacing) / 4);
 }
 
 .social_link_btn {

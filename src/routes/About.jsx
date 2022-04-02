@@ -2,7 +2,7 @@ import styles from "./About.module.css";
 
 const About = () => {
     return (
-        <section className={styles.wrapper}>
+        <section className={`primary-wrapper ${styles.wrapper}`}>
             <article className={styles.about_container}>
                 <header>
                     <h3 className={styles.heading}>
@@ -23,7 +23,7 @@ const About = () => {
                     </p>
                 </div>
             </article>
-            {/*  <div className={styles.circle}></div> */}
+            <div className={styles.circle}></div>
         </section>
     );
 };

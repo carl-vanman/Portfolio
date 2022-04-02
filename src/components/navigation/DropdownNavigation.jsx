@@ -4,7 +4,7 @@ import styles from "./DropdownNavigation.module.css";
 const DropdownNavigation = ({ show, handleShowSubNav }) => {
     return (
         <ul
-            className={`${styles.dropdown_nav_wrapper}
+            className={`primary-wrapper ${styles.dropdown_nav_wrapper}
                     ${
                         show
                             ? styles.dropdown_nav_show
