@@ -10,12 +10,12 @@ import styles from "./Layout.module.css";
 const Layout = () => {
     return (
         <div className={styles.layout}>
-            {/*      <img
-                    className={styles.smiley_background_image}
-                    src="smiley_bg.png"
-                    alt="Smiley background image"
-                />
-             */}
+            {/* <img
+                className={styles.smiley_background_image}
+                src="smiley_bg.png"
+                alt="Smiley background image"
+            />
+ */}
             <header>
                 <TopNavigation />
             </header>

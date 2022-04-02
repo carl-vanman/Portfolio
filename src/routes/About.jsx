@@ -13,7 +13,7 @@ const About = () => {
                     </h3>
                     <h5 className={styles.sub_heading}>Nice to meet you.</h5>
                 </header>
-                <div className={styles.body}>
+                <div className={styles.body_text}>
                     <p>
                         My name is Carl, I'm a kind and humble person with a
                         creative and technical mind.
@@ -21,12 +21,9 @@ const About = () => {
                         Constantly evolving Front-end developer, former tattoo
                         artist and Certified Harley Davidson technician.
                     </p>
-                    {/* <p className={styles.body_date}>
-                        <span>| </span>
-                        {`${new Date().toDateString()}`}
-                    </p> */}
                 </div>
             </article>
+            {/*  <div className={styles.circle}></div> */}
         </section>
     );
 };
