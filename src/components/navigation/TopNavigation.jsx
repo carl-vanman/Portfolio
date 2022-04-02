@@ -42,7 +42,7 @@ const TopNavigation = () => {
                             className={({ isActive }) =>
                                 isActive ? "link--active" : ""
                             }
-                            to="/experence"
+                            to="/experience"
                             onClick={() => setShow(false)}
                         >
                             Experience

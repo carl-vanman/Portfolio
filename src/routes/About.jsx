@@ -11,7 +11,7 @@ const About = () => {
                             こんにちは
                         </span>
                     </h3>
-                    <h5 className={styles.sub_heading}>Nice to meet you.</h5>
+                    <h5 className={styles.sub_heading}>Nice to meet you</h5>
                 </header>
                 <div className={styles.body_text}>
                     <p>
@@ -23,7 +23,7 @@ const About = () => {
                     </p>
                 </div>
             </article>
-            <div className={styles.circle}></div>
+            {/* <div className={styles.circle}></div> */}
         </section>
     );
 };

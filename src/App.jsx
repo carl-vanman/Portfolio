@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./routes/Layout";
 import Projects from "./routes/Projects";
 import About from "./routes/About";
-import Experiance from "./routes/Experiance";
+import Experience from "./routes/Experience";
 import NoMatch from "./routes/NoMatch";
 import TestProjectOne from "./routes/TestProjectOne";
 import TestProjectTwo from "./routes/TestProjectTwo";
@@ -16,7 +16,7 @@ function App() {
             <Route path="/" element={<Layout />}>
                 <Route index element={<About />} />
                 <Route path="/" element={<About />} />
-                <Route path="experence" element={<Experiance />} />
+                <Route path="experience" element={<Experience />} />
                 <Route path="projects" element={<Projects />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="projectOne" element={<TestProjectOne />} />
