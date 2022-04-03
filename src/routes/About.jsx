@@ -23,7 +23,7 @@ const About = () => {
                     </p>
                 </div>
             </article>
-            {/* <div className={styles.circle}></div> */}
+            <div className={styles.circle}></div>
         </section>
     );
 };

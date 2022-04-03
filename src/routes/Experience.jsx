@@ -1,8 +1,11 @@
-/* import { useState } from "react"; */
+import { useState, useEffect } from "react";
+import { AiFillPlayCircle } from "react-icons/ai";
+import { AiFillPauseCircle } from "react-icons/ai";
 import styles from "./Experience.module.css";
 
 const Experience = () => {
-    /* const [experienceList] = useState([
+    const [paus, setPaus] = useState(false);
+    const [experiences, setExperiences] = useState([
         "Html",
         "Css",
         "Javascript",
@@ -18,11 +21,46 @@ const Experience = () => {
         "Node.js",
         "Azure",
         "Figma",
-    ]); */
+    ]);
+
+    const toolTip = [
+        "Html",
+        "Css",
+        "Javascript",
+        "Typescript",
+        "React.js",
+        "React Native",
+        "Vue.js",
+        "Contentful",
+        "Gatsby",
+        "GraphQL",
+        "Wordpress",
+        "Php",
+        "Node.js",
+        "Azure",
+        "Figma",
+    ];
+
+    function handlePaus() {
+        setPaus((previousState) => (previousState = !previousState));
+    }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setExperiences((listOrder) => {
+                const [firstItem, ...rest] = listOrder;
+                return [...rest, firstItem];
+            });
+        }, 2000);
+        if (paus) {
+            clearInterval(interval);
+        }
+        return () => clearInterval(interval);
+    }, [paus]);
 
     return (
         <section className={`primary-wrapper ${styles.wrapper}`}>
-            <article className={styles.experience_container}>
+            <article className={styles.text_container}>
                 <header>
                     <h3 className={styles.heading}>Junior _</h3>
                     <h5 className={styles.sub_heading}>My journey</h5>
@@ -34,6 +72,30 @@ const Experience = () => {
                         opertunity to work with many well known langueses,
                         framework and techniques.
                     </p>
+                </div>
+            </article>
+            <article className={styles.experience_container}>
+                <button
+                    className={styles.icons_container}
+                    style={{ alignSelf: "flex-end", width: "fit-content" }}
+                    onClick={handlePaus}
+                >
+                    {paus ? (
+                        <AiFillPlayCircle className={styles.icons} />
+                    ) : (
+                        <AiFillPauseCircle className={styles.icons} />
+                    )}
+                </button>
+                <div
+                    className={styles.experience_List_container}
+                    title={toolTip}
+                >
+                    {experiences &&
+                        experiences.map((experience) => (
+                            <h3 className={styles.experience} key={experience}>
+                                {experience}
+                            </h3>
+                        ))}
                 </div>
             </article>
         </section>

@@ -75,6 +75,10 @@ h5 {
     letter-spacing: var(--letter-spacing);
 }
 
+h2 {
+    font-size: var(--h2);
+}
+
 h3 {
     font-size: var(--h3);
 }
