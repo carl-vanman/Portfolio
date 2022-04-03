@@ -63,7 +63,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    cursor: help;
+    /* cursor: help; */
 }
 
 .experience_List_container {

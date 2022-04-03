@@ -67,10 +67,10 @@ const Experience = () => {
                 </header>
                 <div className={styles.body_text}>
                     <p>
-                        This sommer I will grautuate from It-Höskolan Front-end
-                        program with a solid foundation. <br /> I've had the
-                        opertunity to work with many well known langueses,
-                        framework and techniques.
+                        This summer I will be graduating from IT-Högskolan
+                        Front-end program with a solid foundation.
+                        <br /> I've had the opportunity to work with well known
+                        languages, framework and techniques.
                     </p>
                 </div>
             </article>

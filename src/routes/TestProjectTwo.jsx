@@ -1,10 +1,10 @@
 const TestProjectTwo = () => {
     return (
-        <>
+        <section className="primary-wrapper" style={{ paddingTop: "0px" }}>
             <h5 style={{ fontWeight: "var(--font-weight-regular)" }}>
-                Lightning test project 2
+                Test project 2
             </h5>
-        </>
+        </section>
     );
 };
 

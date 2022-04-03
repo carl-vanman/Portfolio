@@ -19,12 +19,12 @@ const DropdownNavigation = ({ show, handleShowSubNav }) => {
             </li>
             <li className={styles.dropdown_nav_link}>
                 <NavLink to="/projectTwo" onClick={handleShowSubNav}>
-                    Lightning test project 2
+                    Test project 2
                 </NavLink>
             </li>
             <li className={styles.dropdown_nav_link}>
                 <NavLink to="/projectThree" onClick={handleShowSubNav}>
-                    Pro 3
+                    Test project 3
                 </NavLink>
             </li>
         </ul>
