@@ -4,7 +4,7 @@ import { AiFillPauseCircle } from "react-icons/ai";
 import styles from "./Experience.module.css";
 
 const Experience = () => {
-    const [paus, setPaus] = useState(false);
+    const [pause, setPause] = useState(false);
     const [experiences, setExperiences] = useState([
         "Html",
         "Css",
@@ -42,7 +42,7 @@ const Experience = () => {
     ];
 
     function handlePaus() {
-        setPaus((previousState) => (previousState = !previousState));
+        setPause((previousState) => (previousState = !previousState));
     }
 
     useEffect(() => {
@@ -52,11 +52,11 @@ const Experience = () => {
                 return [...rest, firstItem];
             });
         }, 2000);
-        if (paus) {
+        if (pause) {
             clearInterval(interval);
         }
         return () => clearInterval(interval);
-    }, [paus]);
+    }, [pause]);
 
     return (
         <section className={`primary-wrapper ${styles.wrapper}`}>
@@ -80,10 +80,16 @@ const Experience = () => {
                     style={{ alignSelf: "flex-end", width: "fit-content" }}
                     onClick={handlePaus}
                 >
-                    {paus ? (
-                        <AiFillPlayCircle className={styles.icons} />
+                    {pause ? (
+                        <AiFillPlayCircle
+                            className={styles.icons}
+                            aria-label="Play"
+                        />
                     ) : (
-                        <AiFillPauseCircle className={styles.icons} />
+                        <AiFillPauseCircle
+                            className={styles.icons}
+                            aria-label="Pause"
+                        />
                     )}
                 </button>
                 <div
